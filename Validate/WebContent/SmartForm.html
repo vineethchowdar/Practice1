@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Smart Form</title>
+<style>
+* { margin: 0; padding: 0; }		
+		html { 
+			background: url(image.jpeg) no-repeat center center fixed; 
+			background-size: cover;	
+		}
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+$(function)(){
+var list= ["Amalapuram", "Bombay", "Ballari","Cochin","holland","Nevada","newyork","Hyderabad","vizag","Rajamundry","Vijayawada" ]
+	];
+	$("#cities").autocomplete({
+	source: list 
+	})
+	}
+</script>
+</head>
+<body>
+<div class= "search">
+<form align="center">
+	<h2 >Registration Form</h2>
+  First name: <input type="text" name="firstname"><br>
+  Last name:  <input type="text" name="lastname" ><br>
+ <h3>Select From The following cities to order</h3>
+  City Name:  <input type="text" id="cities"  placeholder="search available cities">
+  <input type="submit" value="Submit">
+  
+  </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+import java.util.Stack;
+
+public class stack {
+
+    public static void main(String[] args) {
+        Stack stack = new Stack();
+
+        System.out.println("Stack Items \n" + stack);
+        System.out.println("Stack Size :" + stack.size());
+
+        System.out.println("Stack Push \n");
+        stack.push("A");
+        stack.push(new Integer(20));
+        stack.push("Example");
+
+        System.out.println("Stack Items \n" + stack);
+        System.out.println("Stack Size :" + stack.size());
+
+        System.out.println("Stack Pop \n");
+        System.out.println("Pop Data :" + stack.pop());
+        System.out.println("Pop Data " + stack.pop());
+        System.out.println("Pop Data " + stack.pop());
+
+        System.out.println("Stack Items \n" + stack);
+        System.out.println("Stack Size :" + stack.size());
+    }
+}

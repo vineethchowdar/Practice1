@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Email Validation</title>
+<script>
+function ValidateEmail(inputText)  
+{  
+var mailformat = \^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\$;  
+if(inputText.value.match(mailformat))  
+{  
+document.RegForm.email.focus();  
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+document.form1.email.focus();  
+return false;  
+}  
+}  
+</script>
+</head>
+<body>
+<form name="RegForm" action="/action_page.php" onsubmit="return ValidateEmail(document.RegForm.email);" method="post">
+Email: <input type="text" name="email">
+Password: <input type="password" name="password">
+<input type="submit" value="Enter to win">
+</form>
+</body>
+</html>
